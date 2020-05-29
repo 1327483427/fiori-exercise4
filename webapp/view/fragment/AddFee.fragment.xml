@@ -1,0 +1,36 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core">
+    <Dialog title="{i18n>TIT_ADD_FEE_DIALOG_TITLE}" type="Standard">
+        <f:SimpleForm id="AddFeeForm"
+			singleContainerFullSize="true" >
+            <f:content>
+				<Label text="{i18n>TIT_FEE_ADD_UID}" />
+                <Input id="fee_uid" value="" />
+                <Label text="{i18n>TIT_FEE_ADD_PLATE_NUMBER}" />
+                <Input id="fee_palce" value="" />
+                <Label text="{i18n>TIT_FEE_ADD_FEE}" />
+                <Input id="fee_fee" value=""></Input>
+                <Label text="{i18n>TIT_FEE_ADD_UNIT}" />
+                <Select id="fee_cny" selectedKey="{USD}">
+                    <items>
+                        <core:Item text="CNY" key="CNY"/>
+                        <core:Item text="USD" key="USD"/>
+                    </items>
+                </Select>
+            </f:content>
+        </f:SimpleForm>
+        <beginButton>
+            <Button
+				text="save"
+				press=".onSave"/>
+        </beginButton>
+        <endButton>
+            <Button
+				text="cancel"
+				press=".onCloseDialog"/>
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>

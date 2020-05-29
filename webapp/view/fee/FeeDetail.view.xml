@@ -1,0 +1,37 @@
+<mvc:View controllerName="com.shunyu.lqp.fiori-test-fee.controller.fee.FeeDetail" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.ui.layout.form" busyIndicatorDelay="0">
+	<Page id="feeDetailPage" title="fee-detial" showNavButton="true" navButtonPress=".onNavBack" class="sapUiResponsiveContentPadding">
+		<content>
+			<Panel id="feePanel" width="auto" class="sapUiResponsiveMargin sapUiNoContentPadding">
+				<headerToolbar>
+					<Toolbar>
+						<Title text="UID {DrivingSafety>UID}" level="H2" />
+						<ToolbarSpacer />
+						<Button text="edit" press="onPress"></Button>
+					</Toolbar>
+				</headerToolbar>
+				<content>
+					<f:SimpleForm minWidth="1024" editable="false" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3" emptySpanL="4" emptySpanM="4" columnsL="1" columnsM="1">
+						<f:content>
+							<Label text="Plate_number" />
+							<Text text="{DrivingSafety>PLATE_NUMBER}" />
+							<Label text="Created_by" />
+							<Text text="{DrivingSafety>CREATED_ON}" />
+							<Label text="Plate_number" />
+							<Text text="{DrivingSafety>CREATED_BY}" />
+							<Label text="Created_by" />
+							<Text text="{DrivingSafety>CHANGED_ON}" />
+							<Label text="Plate_number" />
+							<Text text="{DrivingSafety>CHANGED_BY}" />
+							<Label text="Created_by" />
+							<Text text="{DrivingSafety>FEE_START_DATE}" />
+							<Label text="Plate_number" />
+							<Text text="{DrivingSafety>FEE_END_DATE}" />
+							<Label text="Created_by" />
+							<Text text="{DrivingSafety>FEE} {DrivingSafety>CURRENCY_CODE}  "  />
+						</f:content>
+					</f:SimpleForm>
+				</content>
+			</Panel>
+		</content>
+	</Page>
+</mvc:View>
